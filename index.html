@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution X - Nottafinga Legacy</title>
+    <style>
+        :root {
+            --primary-glow: #00f2ff;
+            --dark-panel: #1a1a1c;
+            --bg-dark: #0f0f10;
+            --header-grad: linear-gradient(180deg, #3a3a3c 0%, #000000 100%);
+            --border-color: #333;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ccc;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        /* 1. LAYOUT ENGINE (CSS GRID) */
+        .nuke-wrapper {
+            display: grid;
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: 240px 1fr 240px;
+            grid-template-areas: 
+                "header header header"
+                "left-col main-col right-col"
+                "footer footer footer";
+            gap: 15px;
+            padding: 15px;
+        }
+
+        /* 2. HEADER & LOGO */
+        header {
+            grid-area: header;
+            background: var(--header-grad);
+            height: 120px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid var(--primary-glow);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        }
+
+        header h1 {
+            color: var(--primary-glow);
+            font-size: 42px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+        }
+
+        /* 3. THE "BLOCK" DESIGN */
+        .block {
+            background: var(--dark-panel);
+            border: 1px solid var(--border-color);
+            margin-bottom: 15px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .block-h {
+            background: var(--header-grad);
+            color: #fff;
+            padding: 8px 12px;
+            font-weight: bold;
+            font-size: 11px;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .block-h span { color: var(--primary-glow); }
+
+        .block-c {
+            padding: 12px;
+        }
+
+        /* 4. CONTENT & NEWS POSTS */
+        .news-article {
+            background: #222;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .news-h {
+            background: #2a2a2c;
+            padding: 10px;
+            color: var(--primary-glow);
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+        }
+
+        .news-info {
+            font-size: 10px;
+            color: #777;
+            padding: 5px 10px;
+            background: #18181a;
+        }
+
+        /* 5. SIDEBAR LINKS */
+        .side-nav a {
+            display: block;
+            color: #aaa;
+            text-decoration: none;
+            padding: 6px 0;
+            border-bottom: 1px dotted #333;
+            transition: 0.2s;
+        }
+
+        .side-nav a:hover {
+            color: var(--primary-glow);
+            background: rgba(0, 242, 255, 0.05);
+            padding-left: 8px;
+        }
+
+        /* MOBILE FIX */
+        @media (max-width: 900px) {
+            .nuke-wrapper {
+                grid-template-columns: 1fr;
+                grid-template-areas: "header" "main-col" "left-col" "right-col" "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="nuke-wrapper">
+    <header>
+        <h1>Backroads Legend Official</h1>
+	<h3><span>A.I. Powered Music</span></h3>
+    </header>
+
+    <aside style="grid-area: left-col;">
+        <div class="block">
+            <div class="block-h"><span>Navigation</span></div>
+            <div class="block-c side-nav">
+                <a href="#">Home</a>
+                <a href="#">YouTube Channel</a>
+                <a href="#">Contact Me</a>
+                <a href="#">Donate</a>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-h">Visitors</div>
+            <div class="block-c">
+             <!-- Elfsight Visitor Counter | Untitled Visitor Counter -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-78b564f9-d023-45ee-a34f-9c789404a8ba" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </aside>
+
+    <main style="grid-area: main-col;">
+        <div class="news-article">
+            <div class="news-h">Howdy There Folks!</div>
+            <div class="news-info">Posted by <b>Admin</b> on Dec 29, 2025 - 14:20:00</div>
+            <div class="block-c">
+                Welcome to the official hub of the Backroads Legend. Whether you're a seasoned explorer or a weekend trail-warrior, you’ve found your crew. We’re here to celebrate the rugged lifestyle, the vehicles that get us there, and the untamed landscapes that keep us coming back. This isn't just a website—it’s a roadmap to your next adventure. Adventure is calling; let’s go find it.
+                <br><br>
+                <a href="" style="color:var(--primary-glow)">~Backroads Legend~</a>
+            </div>
+        </div>
+<div class="news-article">
+            <div class="news-h">Latest Happenin's</div>
+            <div class="news-info">Posted by <b>Admin</b> on Dec 29, 2025 - 14:20:00</div>
+            <div class="block-c">
+              Just released a new official track titled<br><p> "A Somber End." <br><p>* The Vibe: Dark Country / Independent Folk.<p><br>
+
+The Message: <p>An exploration of "the finality of the long walk" and the scars we carry from the places we’ve been.<br><p>
+
+Where to listen: <br><p>Available now on my official YouTube Channel. Let this song set the mood for your next solo night drive.
+                <br><br>
+                <a href="" style="color:var(--primary-glow)">~Backroads Legend~</a>
+            </div>
+        </div>
+    </main>
+
+    <aside style="grid-area: right-col;">
+        <div class="block">
+            <div class="block-h">Personal Quote</div>
+            <div class="block-c">
+                "Hank gave us the heart, Cash gave us the backbone, and Ford gave us the dirt. I’m just here to make sure the music never leaves the trail." <p>-Backroads Legend
+            </div>
+        </div>
+    </aside>
+
+    <footer style="grid-area: footer; text-align:center; padding: 20px; border-top: 1px solid #333; font-size:10px;">
+        Backroads Legend Official &copy; 2025 - 2026 All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>
